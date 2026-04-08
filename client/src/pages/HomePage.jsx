@@ -38,7 +38,7 @@ const HomePage = () => {
         <div className="hero-badges">
           <div className="hero-badge">
             <span>🚚</span>
-            <p>Free Shipping over ₹999</p>
+            <p>Free Shipping over $75</p>
           </div>
           <div className="hero-badge">
             <span>🔒</span>

@@ -44,8 +44,10 @@ const OrderSummary = ({ items, totals }) => {
         </div>
       </div>
 
-      {totals.shippingPrice === 0 && (
+      {totals.shippingPrice === 0 ? (
         <p className="free-shipping-notice">&#10003; You qualify for free shipping!</p>
+      ) : (
+        <p className="shipping-threshold-notice">Add {formatPrice(75 - totals.itemsPrice)} more for free shipping</p>
       )}
     </div>
   );

@@ -51,8 +51,8 @@ export const calculateCartTotals = (items) => {
     return acc + price * item.quantity;
   }, 0);
 
-  const shippingPrice = itemsPrice > 999 ? 0 : 49;
-  const taxRate = 0.18;
+  const shippingPrice = itemsPrice > 75 ? 0 : 9.99;
+  const taxRate = 0.08;
   const taxPrice = parseFloat((itemsPrice * taxRate).toFixed(2));
   const totalPrice = parseFloat((itemsPrice + shippingPrice + taxPrice).toFixed(2));
 
